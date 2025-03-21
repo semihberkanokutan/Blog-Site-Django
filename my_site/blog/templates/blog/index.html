@@ -1,5 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     My Blog
+{% endblock %}
+
+{% block css_links %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <header>
+        <div class="container">
+            <div>
+               <img src="" alt="">
+                <h1>semih's
+                    blog</h1>
+            </div>
+            <p>Hi, I'm Semih and i love to write about pretty much everything.</p>
+        </div>
+    </header>
 {% endblock %}

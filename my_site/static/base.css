@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Roboto", sans-serif;
 }
 
 body {
-    background: linear-gradient(#8174A0, #A888B5) no-repeat;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,17 +23,24 @@ a {
     margin: auto;
 }
 
-header {
+nav {
+    background: linear-gradient(#563A9C, #6A42C2) no-repeat;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
 }
 
-header nav {
+nav .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header nav a {
+nav a {
     color: #fff;
     font-weight: bold;
+}
+
+nav a:first-child {
+    font-size: 1.6rem;
 }
