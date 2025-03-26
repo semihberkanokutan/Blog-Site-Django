@@ -9,4 +9,4 @@ def index(request):
 
 
 def all_blog_posts(request):
-    return HttpResponse('All Blog Posts')
+    return render(request, 'blog/all-posts.html')

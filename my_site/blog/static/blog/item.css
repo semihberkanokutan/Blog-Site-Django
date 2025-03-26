@@ -1,0 +1,43 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 20px;
+}
+
+.item img {
+    border: 5px solid red;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.item h4 {
+    color: #313133;
+    font-size: 1.2rem;
+}
+
+.item p {
+    color: #313133;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.item:hover {
+    background: #563A9C !important;
+}
+
+.item:hover h4,
+.item:hover p{
+    color: #fff;
+}
+
+.item.posts {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+    background: #fff;
+}

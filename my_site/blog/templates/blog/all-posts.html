@@ -1,45 +1,30 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}
-    My Blog
-{% endblock %}
-
 {% block css_links %}
-    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/item.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
 {% endblock %}
 
 {% block content %}
-    <header>
-        <div class="container">
-            <div>
-               <img src="" alt="">
-                <h1>semih's
-                    blog</h1>
-            </div>
-            <p>Hi, I'm Semih and i love to write about pretty much everything.</p>
-        </div>
-    </header>
-
-
-    <section id="latest-section">
-        <h2>My Latest Thoughts</h2>
-        <div>
-            <a href="#" class="item">
+    <main id="allPostsMain">
+        <h2>My Collected Posts</h2>
+        <section>
+            <a href="#" class="item posts">
                 <img src="" alt="">
                 <h4>Nature At Its Best</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
             </a>
-            <a href="#" class="item">
+            <a href="#" class="item posts">
                 <img src="" alt="">
                 <h4>Nature At Its Best</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
             </a>
-            <a href="#" class="item">
+            <a href="#" class="item posts">
                 <img src="" alt="">
                 <h4>Nature At Its Best</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
             </a>
-        </div>
-    </section>
+        </section>
+    </main>
 {% endblock %}
