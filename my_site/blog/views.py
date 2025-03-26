@@ -10,3 +10,7 @@ def index(request):
 
 def all_blog_posts(request):
     return render(request, 'blog/all-posts.html')
+
+
+def blog_post_detail(request):
+    return render(request, 'blog/post-details.html')

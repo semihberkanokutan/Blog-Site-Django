@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_links %}
+    <link rel="stylesheet" href="{% static 'blog/post-details.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <main class="detailMain">
+        <section class="detail-first">
+            <h1 class="blog-title">Nature At Its Best</h1>
+            <div>
+                <img src="" alt="">
+                <span class="author">By Semih</span>
+                <p class="last-update">Last updated on <span>27 Mar 2025</span></p>
+            </div>
+        </section>
+        <section class="detail-last">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores est facilis, harum magnam maxime odit porro quia unde voluptatibus?
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at cupiditate delectus dolore eligendi, et eum eveniet facilis ipsa laborum nesciunt officia praesentium, quam quia quod recusandae rem repellendus veritatis!
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eos in laborum modi nobis optio quibusdam sapiente suscipit veniam voluptatem.
+            </p>
+        </section>
+    </main>
+
+{% endblock %}
