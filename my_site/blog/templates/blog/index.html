@@ -25,21 +25,13 @@
     <section id="latest-section">
         <h2>My Latest Thoughts</h2>
         <div>
-            <a href="#" class="item">
-                <img src="" alt="">
-                <h4>Nature At Its Best</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
-            </a>
-            <a href="#" class="item">
-                <img src="" alt="">
-                <h4>Nature At Its Best</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
-            </a>
-            <a href="#" class="item">
-                <img src="" alt="">
-                <h4>Nature At Its Best</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio dolorem doloremque dolorum enim expedita impedit iure officia totam voluptatibus!</p>
-            </a>
+            {% for item in posts %}
+                <a href="#" class="item">
+                    <img src="{{ item.image.url }}" alt="">
+                    <h4>{{ item.title }}</h4>
+                    <p>{{ item.excerpt }}</p>
+                </a>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}

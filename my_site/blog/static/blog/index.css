@@ -68,7 +68,6 @@ header p {
 }
 
 #latest-section a img {
-    border: 5px solid red;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -93,4 +92,9 @@ header p {
 #latest-section a:hover h4,
 #latest-section a:hover p{
     color: #fff;
+}
+
+#latest-section a h4,
+#latest-section a p{
+    text-align: center !important;
 }
